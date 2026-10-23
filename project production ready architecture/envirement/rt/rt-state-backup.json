@@ -1,0 +1,719 @@
+﻿{
+  "version": 4,
+  "terraform_version": "1.15.8",
+  "serial": 5,
+  "lineage": "b49c72bb-eadb-3676-a6e9-e47aac46a3e1",
+  "outputs": {
+    "rt_arn": {
+      "value": "arn:aws:ec2:us-east-1:937485902740:route-table/rtb-087bfacedc7b7508a",
+      "type": "string"
+    },
+    "rt_id": {
+      "value": "rtb-087bfacedc7b7508a",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "igw",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/igw/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "igw_id": "igw-00eec7b0fd99af262"
+              },
+              "type": [
+                "object",
+                {
+                  "igw_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "network",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "vpc_id": "vpc-0e2e0eede4ee528e6"
+              },
+              "type": [
+                "object",
+                {
+                  "vpc_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.aws_public_rt",
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "igw",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/igw/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "igw_id": "igw-00eec7b0fd99af262"
+              },
+              "type": [
+                "object",
+                {
+                  "igw_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.aws_public_rt",
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "nats",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/nats/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "nat_1a_id": "nat-08d036f900422e572",
+                "nat_1b_id": "nat-0a1eff61f9bbb1940",
+                "nat_1c_id": "nat-00694538631eb4ab5"
+              },
+              "type": [
+                "object",
+                {
+                  "nat_1a_id": "string",
+                  "nat_1b_id": "string",
+                  "nat_1c_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.aws_public_rt",
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "network",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "vpc_id": "vpc-0e2e0eede4ee528e6"
+              },
+              "type": [
+                "object",
+                {
+                  "vpc_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.aws_public_rt",
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "public_subnet",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/subnets/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "private_subnet_id_1a": "subnet-07c53f4dc8aed78f2",
+                "private_subnet_id_1b": "subnet-0251ef47e154a8baa",
+                "private_subnet_id_1c": "subnet-0dc6552a0ac8ca42a",
+                "subnet_id": "subnet-0ac1864bfd66d73f4",
+                "subnet_id_1b": "subnet-059c40fb1a3b20c11",
+                "subnet_id_1c": "subnet-05bd3a27526c8779f"
+              },
+              "type": [
+                "object",
+                {
+                  "private_subnet_id_1a": "string",
+                  "private_subnet_id_1b": "string",
+                  "private_subnet_id_1c": "string",
+                  "subnet_id": "string",
+                  "subnet_id_1b": "string",
+                  "subnet_id_1c": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.aws_public_rt",
+      "mode": "managed",
+      "type": "aws_route_table",
+      "name": "my-private-rt-ap-south-1a",
+      "provider": "module.aws_public_rt.provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:937485902740:route-table/rtb-0d9ad2fa0b00626e8",
+            "id": "rtb-0d9ad2fa0b00626e8",
+            "owner_id": "937485902740",
+            "propagating_vgws": [],
+            "region": "us-east-1",
+            "route": [
+              {
+                "carrier_gateway_id": "",
+                "cidr_block": "0.0.0.0/0",
+                "core_network_arn": "",
+                "destination_prefix_list_id": "",
+                "egress_only_gateway_id": "",
+                "gateway_id": "",
+                "ipv6_cidr_block": "",
+                "local_gateway_id": "",
+                "nat_gateway_id": "nat-08d036f900422e572",
+                "network_interface_id": "",
+                "odb_network_arn": "",
+                "transit_gateway_id": "",
+                "vpc_endpoint_id": "",
+                "vpc_peering_connection_id": ""
+              }
+            ],
+            "tags": {
+              "Name": "route_table_for_private_sub_1a"
+            },
+            "tags_all": {
+              "Name": "route_table_for_private_sub_1a"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0e2e0eede4ee528e6"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "937485902740",
+            "id": "rtb-0d9ad2fa0b00626e8",
+            "region": "us-east-1"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.aws_public_rt.data.terraform_remote_state.nats",
+            "module.aws_public_rt.data.terraform_remote_state.network"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.aws_public_rt",
+      "mode": "managed",
+      "type": "aws_route_table",
+      "name": "my-private-rt-ap-south-1b",
+      "provider": "module.aws_public_rt.provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:937485902740:route-table/rtb-05e2e7ab9773067e9",
+            "id": "rtb-05e2e7ab9773067e9",
+            "owner_id": "937485902740",
+            "propagating_vgws": [],
+            "region": "us-east-1",
+            "route": [
+              {
+                "carrier_gateway_id": "",
+                "cidr_block": "0.0.0.0/0",
+                "core_network_arn": "",
+                "destination_prefix_list_id": "",
+                "egress_only_gateway_id": "",
+                "gateway_id": "",
+                "ipv6_cidr_block": "",
+                "local_gateway_id": "",
+                "nat_gateway_id": "nat-0a1eff61f9bbb1940",
+                "network_interface_id": "",
+                "odb_network_arn": "",
+                "transit_gateway_id": "",
+                "vpc_endpoint_id": "",
+                "vpc_peering_connection_id": ""
+              }
+            ],
+            "tags": {
+              "Name": "route_table_for_private_sub_1b"
+            },
+            "tags_all": {
+              "Name": "route_table_for_private_sub_1b"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0e2e0eede4ee528e6"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "937485902740",
+            "id": "rtb-05e2e7ab9773067e9",
+            "region": "us-east-1"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.aws_public_rt.data.terraform_remote_state.nats",
+            "module.aws_public_rt.data.terraform_remote_state.network"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.aws_public_rt",
+      "mode": "managed",
+      "type": "aws_route_table",
+      "name": "my-private-rt-ap-south-1c",
+      "provider": "module.aws_public_rt.provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:937485902740:route-table/rtb-058c5aa8e57035137",
+            "id": "rtb-058c5aa8e57035137",
+            "owner_id": "937485902740",
+            "propagating_vgws": [],
+            "region": "us-east-1",
+            "route": [
+              {
+                "carrier_gateway_id": "",
+                "cidr_block": "0.0.0.0/0",
+                "core_network_arn": "",
+                "destination_prefix_list_id": "",
+                "egress_only_gateway_id": "",
+                "gateway_id": "",
+                "ipv6_cidr_block": "",
+                "local_gateway_id": "",
+                "nat_gateway_id": "nat-00694538631eb4ab5",
+                "network_interface_id": "",
+                "odb_network_arn": "",
+                "transit_gateway_id": "",
+                "vpc_endpoint_id": "",
+                "vpc_peering_connection_id": ""
+              }
+            ],
+            "tags": {
+              "Name": "route_table_for_private_sub_1c"
+            },
+            "tags_all": {
+              "Name": "route_table_for_private_sub_1c"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0e2e0eede4ee528e6"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "937485902740",
+            "id": "rtb-058c5aa8e57035137",
+            "region": "us-east-1"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.aws_public_rt.data.terraform_remote_state.nats",
+            "module.aws_public_rt.data.terraform_remote_state.network"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.aws_public_rt",
+      "mode": "managed",
+      "type": "aws_route_table",
+      "name": "public_rt",
+      "provider": "module.aws_public_rt.provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:937485902740:route-table/rtb-087bfacedc7b7508a",
+            "id": "rtb-087bfacedc7b7508a",
+            "owner_id": "937485902740",
+            "propagating_vgws": [],
+            "region": "us-east-1",
+            "route": [
+              {
+                "carrier_gateway_id": "",
+                "cidr_block": "0.0.0.0/0",
+                "core_network_arn": "",
+                "destination_prefix_list_id": "",
+                "egress_only_gateway_id": "",
+                "gateway_id": "igw-00eec7b0fd99af262",
+                "ipv6_cidr_block": "",
+                "local_gateway_id": "",
+                "nat_gateway_id": "",
+                "network_interface_id": "",
+                "odb_network_arn": "",
+                "transit_gateway_id": "",
+                "vpc_endpoint_id": "",
+                "vpc_peering_connection_id": ""
+              }
+            ],
+            "tags": {
+              "Name": "public_route_table"
+            },
+            "tags_all": {
+              "Name": "public_route_table"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0e2e0eede4ee528e6"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "937485902740",
+            "id": "rtb-087bfacedc7b7508a",
+            "region": "us-east-1"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.aws_public_rt.data.terraform_remote_state.igw",
+            "module.aws_public_rt.data.terraform_remote_state.network"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.aws_public_rt",
+      "mode": "managed",
+      "type": "aws_route_table_association",
+      "name": "pri_subnet_association_1a",
+      "provider": "module.aws_public_rt.provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "gateway_id": "",
+            "id": "rtbassoc-08627ec10bb2f571a",
+            "region": "us-east-1",
+            "route_table_id": "rtb-0d9ad2fa0b00626e8",
+            "subnet_id": "subnet-07c53f4dc8aed78f2",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "937485902740",
+            "id": "rtbassoc-08627ec10bb2f571a",
+            "region": "us-east-1"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.aws_public_rt.aws_route_table.my-private-rt-ap-south-1a",
+            "module.aws_public_rt.data.terraform_remote_state.nats",
+            "module.aws_public_rt.data.terraform_remote_state.network",
+            "module.aws_public_rt.data.terraform_remote_state.public_subnet"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.aws_public_rt",
+      "mode": "managed",
+      "type": "aws_route_table_association",
+      "name": "pri_subnet_association_1b",
+      "provider": "module.aws_public_rt.provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "gateway_id": "",
+            "id": "rtbassoc-06e148fca80213f64",
+            "region": "us-east-1",
+            "route_table_id": "rtb-05e2e7ab9773067e9",
+            "subnet_id": "subnet-0251ef47e154a8baa",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "937485902740",
+            "id": "rtbassoc-06e148fca80213f64",
+            "region": "us-east-1"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.aws_public_rt.aws_route_table.my-private-rt-ap-south-1b",
+            "module.aws_public_rt.data.terraform_remote_state.nats",
+            "module.aws_public_rt.data.terraform_remote_state.network",
+            "module.aws_public_rt.data.terraform_remote_state.public_subnet"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.aws_public_rt",
+      "mode": "managed",
+      "type": "aws_route_table_association",
+      "name": "pri_subnet_association_1c",
+      "provider": "module.aws_public_rt.provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "gateway_id": "",
+            "id": "rtbassoc-0f600f2ab305eb39b",
+            "region": "us-east-1",
+            "route_table_id": "rtb-058c5aa8e57035137",
+            "subnet_id": "subnet-0dc6552a0ac8ca42a",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "937485902740",
+            "id": "rtbassoc-0f600f2ab305eb39b",
+            "region": "us-east-1"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.aws_public_rt.aws_route_table.my-private-rt-ap-south-1c",
+            "module.aws_public_rt.data.terraform_remote_state.nats",
+            "module.aws_public_rt.data.terraform_remote_state.network",
+            "module.aws_public_rt.data.terraform_remote_state.public_subnet"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.aws_public_rt",
+      "mode": "managed",
+      "type": "aws_route_table_association",
+      "name": "public_subnet_association",
+      "provider": "module.aws_public_rt.provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "index_key": "subnet-059c40fb1a3b20c11",
+          "schema_version": 0,
+          "attributes": {
+            "gateway_id": "",
+            "id": "rtbassoc-0a09252c9299d7861",
+            "region": "us-east-1",
+            "route_table_id": "rtb-087bfacedc7b7508a",
+            "subnet_id": "subnet-059c40fb1a3b20c11",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "937485902740",
+            "id": "rtbassoc-0a09252c9299d7861",
+            "region": "us-east-1"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.aws_public_rt.aws_route_table.public_rt",
+            "module.aws_public_rt.data.terraform_remote_state.igw",
+            "module.aws_public_rt.data.terraform_remote_state.network",
+            "module.aws_public_rt.data.terraform_remote_state.public_subnet"
+          ]
+        },
+        {
+          "index_key": "subnet-05bd3a27526c8779f",
+          "schema_version": 0,
+          "attributes": {
+            "gateway_id": "",
+            "id": "rtbassoc-03dd756c379af9a8b",
+            "region": "us-east-1",
+            "route_table_id": "rtb-087bfacedc7b7508a",
+            "subnet_id": "subnet-05bd3a27526c8779f",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "937485902740",
+            "id": "rtbassoc-03dd756c379af9a8b",
+            "region": "us-east-1"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.aws_public_rt.aws_route_table.public_rt",
+            "module.aws_public_rt.data.terraform_remote_state.igw",
+            "module.aws_public_rt.data.terraform_remote_state.network",
+            "module.aws_public_rt.data.terraform_remote_state.public_subnet"
+          ]
+        },
+        {
+          "index_key": "subnet-0ac1864bfd66d73f4",
+          "schema_version": 0,
+          "attributes": {
+            "gateway_id": "",
+            "id": "rtbassoc-0504e4912d57aa312",
+            "region": "us-east-1",
+            "route_table_id": "rtb-087bfacedc7b7508a",
+            "subnet_id": "subnet-0ac1864bfd66d73f4",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "937485902740",
+            "id": "rtbassoc-0504e4912d57aa312",
+            "region": "us-east-1"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.aws_public_rt.aws_route_table.public_rt",
+            "module.aws_public_rt.data.terraform_remote_state.igw",
+            "module.aws_public_rt.data.terraform_remote_state.network",
+            "module.aws_public_rt.data.terraform_remote_state.public_subnet"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
+
