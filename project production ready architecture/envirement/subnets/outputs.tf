@@ -1,30 +1,15 @@
-output "subnet_id" {
-  value = module.aws_pub_01_sub.subnet_id
+output "public_subnet_ids" {
+  value = [
+    module.aws_pub_01_sub.public_subnet_1a_id,
+    module.aws_pub_01_sub.public_subnet_1b_id,
+    module.aws_pub_01_sub.public_subnet_1c_id
+  ]
 }
 
-
-output "subnet_id_1b" {
-  value = module.aws_pub_01_sub.subnet_id_1b
+output "private_subnet_ids" {
+  value = [
+    module.aws_pub_01_sub.private_subnet_1a_id,
+    module.aws_pub_01_sub.private_subnet_1b_id,
+    module.aws_pub_01_sub.private_subnet_1c_id
+  ]
 }
-
-output "subnet_id_1c" {
-  value = module.aws_pub_01_sub.subnet_id_1c
-}
-
-
-output "private_subnet_id_1a" {
-  value = module.aws_pub_01_sub.private_subnet_id_1a
-}
-
-
-output "private_subnet_id_1b" {
-  value = module.aws_pub_01_sub.private_subnet_id_1b
-}
-
-
-output "private_subnet_id_1c" {
-  value = module.aws_pub_01_sub.private_subnet_id_1c
-}
-
-
-

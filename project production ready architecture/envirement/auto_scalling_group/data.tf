@@ -45,3 +45,28 @@ backend = "s3"
     region = "ap-south-1"
   }
 }
+
+
+data "terraform_remote_state" "dns_backend" {
+backend = "s3"
+  config = {
+ 
+    bucket = "terraform-s3-backend-rohit-11"
+    key = "projects/pro-ready-archi/dns-record/terraform.tfstate"
+    region = "ap-south-1"
+ 
+}
+
+}
+
+data "terraform_remote_state" "alb_backend" {
+  backend = "s3"
+
+  config = {
+
+    bucket = "terraform-s3-backend-rohit-11"
+    key = "projects/pro-ready-archi/alb/terraform.tfstate"
+    region = "ap-south-1"
+
+  }
+}

@@ -46,3 +46,29 @@ data "terraform_remote_state" "launch_template" {
     region = "ap-south-1"
   }
 }
+
+
+data "terraform_remote_state" "acm_backend" {
+  backend = "s3"
+
+  config = {
+
+    bucket = "terraform-s3-backend-rohit-11"
+    key = "projects/pro-ready-archi/acm/terraform.tfstate"
+    region = "ap-south-1"
+
+  }
+}
+
+
+data "terraform_remote_state" "alb_backend" {
+  backend = "s3"
+
+  config = {
+
+    bucket = "terraform-s3-backend-rohit-11"
+    key = "projects/pro-ready-archi/alb/terraform.tfstate"
+    region = "ap-south-1"
+
+  }
+}

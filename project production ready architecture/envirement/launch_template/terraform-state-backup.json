@@ -1,0 +1,646 @@
+﻿{
+  "version": 4,
+  "terraform_version": "1.15.8",
+  "serial": 8,
+  "lineage": "83c9bfbe-4c6f-9f1b-5bde-ab339008f192",
+  "outputs": {
+    "launch_template_latest_version": {
+      "value": 1,
+      "type": "number"
+    },
+    "lt_id": {
+      "value": "lt-086207484e8d939db",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "igw",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/igw/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "igw_id": "igw-01331be85785b3d44"
+              },
+              "type": [
+                "object",
+                {
+                  "igw_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "nats",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/nats/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "nat_1a_id": "nat-0ec41df0288165a8d",
+                "nat_1b_id": "nat-0307fec217f3c9f39",
+                "nat_1c_id": "nat-09b5d62632eb8c54c"
+              },
+              "type": [
+                "object",
+                {
+                  "nat_1a_id": "string",
+                  "nat_1b_id": "string",
+                  "nat_1c_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "network",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "vpc_id": "vpc-0ed956e505c328275"
+              },
+              "type": [
+                "object",
+                {
+                  "vpc_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "public_subnet",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/subnets/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "private_subnet_ids": [
+                  "subnet-0eaa538c15baa3acf",
+                  "subnet-0c825ad8414124baa",
+                  "subnet-00b513c1772b97202"
+                ],
+                "public_subnet_ids": [
+                  "subnet-02c5101fd526de39c",
+                  "subnet-0ae3b2944a7b31816",
+                  "subnet-071b42d6b49e2dcbb"
+                ]
+              },
+              "type": [
+                "object",
+                {
+                  "private_subnet_ids": [
+                    "tuple",
+                    [
+                      "string",
+                      "string",
+                      "string"
+                    ]
+                  ],
+                  "public_subnet_ids": [
+                    "tuple",
+                    [
+                      "string",
+                      "string",
+                      "string"
+                    ]
+                  ]
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "security_group",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/security-group/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "alb_sg_id": "sg-031145dbd0b149611",
+                "ec2_sg_id": "sg-03098d3b4cc289e78"
+              },
+              "type": [
+                "object",
+                {
+                  "alb_sg_id": "string",
+                  "ec2_sg_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.lt_module",
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "igw",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/igw/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "igw_id": "igw-01331be85785b3d44"
+              },
+              "type": [
+                "object",
+                {
+                  "igw_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.lt_module",
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "nats",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/nats/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "nat_1a_id": "nat-0ec41df0288165a8d",
+                "nat_1b_id": "nat-0307fec217f3c9f39",
+                "nat_1c_id": "nat-09b5d62632eb8c54c"
+              },
+              "type": [
+                "object",
+                {
+                  "nat_1a_id": "string",
+                  "nat_1b_id": "string",
+                  "nat_1c_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.lt_module",
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "network",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "vpc_id": "vpc-0ed956e505c328275"
+              },
+              "type": [
+                "object",
+                {
+                  "vpc_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.lt_module",
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "public_subnet",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/subnets/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "private_subnet_ids": [
+                  "subnet-0eaa538c15baa3acf",
+                  "subnet-0c825ad8414124baa",
+                  "subnet-00b513c1772b97202"
+                ],
+                "public_subnet_ids": [
+                  "subnet-02c5101fd526de39c",
+                  "subnet-0ae3b2944a7b31816",
+                  "subnet-071b42d6b49e2dcbb"
+                ]
+              },
+              "type": [
+                "object",
+                {
+                  "private_subnet_ids": [
+                    "tuple",
+                    [
+                      "string",
+                      "string",
+                      "string"
+                    ]
+                  ],
+                  "public_subnet_ids": [
+                    "tuple",
+                    [
+                      "string",
+                      "string",
+                      "string"
+                    ]
+                  ]
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.lt_module",
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "security_group",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "s3",
+            "config": {
+              "value": {
+                "bucket": "terraform-s3-backend-rohit-11",
+                "key": "projects/pro-ready-archi/security-group/terraform.tfstate",
+                "region": "ap-south-1"
+              },
+              "type": [
+                "object",
+                {
+                  "bucket": "string",
+                  "key": "string",
+                  "region": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "alb_sg_id": "sg-031145dbd0b149611",
+                "ec2_sg_id": "sg-03098d3b4cc289e78"
+              },
+              "type": [
+                "object",
+                {
+                  "alb_sg_id": "string",
+                  "ec2_sg_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.lt_module",
+      "mode": "managed",
+      "type": "aws_launch_template",
+      "name": "lt-for-ec2",
+      "provider": "module.lt_module.provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:937485902740:launch-template/lt-086207484e8d939db",
+            "block_device_mappings": [
+              {
+                "device_name": "/dev/sda1",
+                "ebs": [
+                  {
+                    "delete_on_termination": "",
+                    "encrypted": "",
+                    "iops": 0,
+                    "kms_key_id": "",
+                    "snapshot_id": "",
+                    "throughput": 0,
+                    "volume_initialization_rate": 0,
+                    "volume_size": 20,
+                    "volume_type": "gp2"
+                  }
+                ],
+                "no_device": "",
+                "virtual_name": ""
+              }
+            ],
+            "capacity_reservation_specification": [],
+            "cpu_options": [],
+            "credit_specification": [],
+            "default_version": 1,
+            "description": "",
+            "disable_api_stop": false,
+            "disable_api_termination": false,
+            "ebs_optimized": "",
+            "enclave_options": [],
+            "hibernation_options": [],
+            "iam_instance_profile": [],
+            "id": "lt-086207484e8d939db",
+            "image_id": "ami-08c982207dfbf2b27",
+            "instance_initiated_shutdown_behavior": "",
+            "instance_market_options": [],
+            "instance_requirements": [],
+            "instance_type": "t2.micro",
+            "kernel_id": "",
+            "key_name": "testServer",
+            "latest_version": 1,
+            "license_specification": [],
+            "maintenance_options": [],
+            "metadata_options": [],
+            "monitoring": [],
+            "name": "ec2-prof-lt",
+            "name_prefix": "",
+            "network_interfaces": [
+              {
+                "associate_carrier_ip_address": "",
+                "associate_public_ip_address": "",
+                "connection_tracking_specification": [],
+                "delete_on_termination": "",
+                "description": "",
+                "device_index": 0,
+                "ena_queue_count": 0,
+                "ena_srd_specification": [],
+                "interface_type": "",
+                "ipv4_address_count": 0,
+                "ipv4_addresses": [],
+                "ipv4_prefix_count": 0,
+                "ipv4_prefixes": [],
+                "ipv6_address_count": 0,
+                "ipv6_addresses": [],
+                "ipv6_prefix_count": 0,
+                "ipv6_prefixes": [],
+                "network_card_index": 0,
+                "network_interface_id": "",
+                "primary_ipv6": "",
+                "private_ip_address": "",
+                "security_groups": [
+                  "sg-03098d3b4cc289e78"
+                ],
+                "subnet_id": ""
+              }
+            ],
+            "network_performance_options": [],
+            "placement": [],
+            "private_dns_name_options": [],
+            "ram_disk_id": "",
+            "region": "us-east-1",
+            "secondary_interfaces": [],
+            "security_group_names": [],
+            "tag_specifications": [
+              {
+                "resource_type": "instance",
+                "tags": {
+                  "Name": "ec2-template"
+                }
+              }
+            ],
+            "tags": {},
+            "tags_all": {},
+            "update_default_version": null,
+            "user_data": "IyEvYmluL2Jhc2gNCnl1bSBpbnN0YWxsIGh0dHBkIC15IA0Kc3lzdGVtY3RsIHN0YXJ0IGh0dHBkIA0Kc3lzdGVtY3RsIGVuYWJsZSBodHRwZCANCmVjaG8gIjxoMT50aGlzIGlzIGZpbGUgYnlyIHJvaGl0IHBhdGlsICQoaG9zdG5hbWUpPC9oMT4iID4gL3Zhci93d3cvaHRtbC9pbmRleC5odG1sDQo=",
+            "vpc_security_group_ids": []
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "937485902740",
+            "id": "lt-086207484e8d939db",
+            "region": "us-east-1"
+          },
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ==",
+          "dependencies": [
+            "module.lt_module.data.terraform_remote_state.security_group"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
+
